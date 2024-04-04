@@ -1,0 +1,117 @@
+#wrap {
+margin: 0px;
+padding: 10px;
+min-width: 500px;
+margin: auto;
+display: flex;
+position: absolute;
+background:#f0f1f2;
+}
+
+
+#sidebar{ width: 30%;
+float: left;
+background: #27292b;
+color: white;
+text-align: center ;
+}
+
+#content{margin-left: 210px; left auto; min-height:100px; background:#f0f1f2;}
+
+div#conteneur
+{
+  width: 100% ;
+  margin: 5% ;
+  text-align: left ;
+}
+
+section {
+  width: 90% ;
+  margin: 5% ;
+  text-align: left ;
+}
+
+.conteneur{
+  height: 1500px;
+  width: 100%;
+  background:white;
+}
+
+/*Reset CSS*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Avenir, sans-serif;
+}
+
+body
+{
+  margin: 10px 0 ;
+  padding: 0 ;
+}
+
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    background-color: #27292b;
+}
+
+nav #menu{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 33%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav #menu::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+
+nav a:hover{
+    color: #27292b;
+    border-bottom: 2px solid gold;
+}
+
+
+img {
+   clip-path:ellipse(50% 50%);
+}
+
+
+.fa-linkedin-square{
+color:#0a66c2;
+font-size:30px !important
+}
+
+.fa-envelope{
+color:white;
+font-size:30px !important
+}
+
+.fa-google-scholar{
+color:white;
+font-size:30px !important
+}
+
+
+h2{
+    display: inline;
+}
